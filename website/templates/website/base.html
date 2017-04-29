@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+{% load staticfiles %}
+{% load bootstrap3 %}
+
+    <meta charset="UTF-8">
+
+    <!-- Django Bootstrap3 -->
+  	{% bootstrap_css %}
+	{% bootstrap_javascript %}
+
+    <title>{% block title_block %} {% endblock %}</title>
+</head>
+<body>
+{% block content %}{% endblock %}
+</body>
+</html>
